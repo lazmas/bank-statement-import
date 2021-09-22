@@ -131,7 +131,7 @@ class CamtParser(models.AbstractModel):
     def parse_entry(self, ns, node):
         """Parse an Ntry node and yield transactions"""
         transaction = {"name": "/", "amount": 0}  # fallback defaults
-        self.add_value_from_node(ns, node, "./ns:BookgDt/ns:Dt", transaction, "date")
+        self.add_value_from_node(ns, node, ["./ns:BookgDt/ns:Dt", "./ns:BookgDt/ns:DtTm"], transaction, "date")
         # Check `DtTm` if date was not found in `Dt`.
         if "date" not in transaction:
             self.add_value_from_node(
