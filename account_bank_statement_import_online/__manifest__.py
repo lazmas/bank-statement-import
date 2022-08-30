@@ -4,10 +4,10 @@
 
 {
     "name": "Online Bank Statements",
-    "version": "13.0.1.0.0",
+    "version": "13.0.1.0.1",
     "author": "CorporateHub, Odoo Community Association (OCA)",
     "maintainers": ["alexey-pelykh"],
-    "website": "https://github.com/OCA/bank-statement-import/",
+    "website": "https://github.com/OCA/bank-statement-import",
     "license": "AGPL-3",
     "category": "Accounting",
     "summary": "Online bank statements update",
